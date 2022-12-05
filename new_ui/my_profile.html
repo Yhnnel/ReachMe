@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Profile</title>
+        <link rel="icon" href="favicon.png" type="image/icon type">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        header{
+            background-color: #e75348;
+            height: 65px;
+        }
+        .logo {
+            height: 5px;
+            padding-top: 12px;
+            padding-right: 20px;
+        }
+        .logo-img {
+            width: 44px;
+            height: 40px;
+            margin-left: 50px;
+        }
+        .search-bar {
+            margin-left: 120px;
+        }
+        button {
+            border: none;
+            margin-left: -10px;
+            margin-top: -10px;
+            width: 45px;
+            height: 40px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        input {
+            border: none;
+            outline: none;
+            height: 40px;
+            width: 300px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        i {
+            color: white;
+            padding-top: 5px;
+        }
+        #search {
+            color: #e75348;
+            padding-top: 5px;
+        }
+        nav {
+            display: inline;
+        }
+        li {
+            display: inline;
+        }
+        a {
+            text-decoration: none;  
+            margin: 20px;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin-left: 800px;
+            margin-top: -30px;
+        }
+        .user-info img {
+            border-radius: 100px;
+            width: 45px;
+            margin-left: 5px;
+        }
+        .user-account {
+            margin-left: 85%;
+            margin-top: -60px;
+            width: 160px;
+            border-left: 0.5px solid;
+            border-right: 0.5px solid;
+            border-color: orangered;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+        }
+        .user-info a{
+            margin-left: 5px;
+        }
+        .user-info i{
+            margin-left: -15px;
+        }
+        .user-info {
+            margin-top: 2px;
+            margin-left: 5px;
+            margin-right: -5px;
+        }
+        .cover img {
+            width: 100%;
+            position: relative;
+        }
+        .user-account-setting {
+            display: none;
+        }
+        .user-info:hover + .user-account-setting {
+            position: absolute;
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            z-index: 999;
+            color: black;
+            background-color: #ffffff;
+            width: 180px;
+            margin-left: -16px;
+            margin-top: 9px;
+            box-shadow: 1px 1px 6px -2px rgb(0 0 0 / 24%);
+        }
+        .user-account-setting:hover {
+            position: absolute;
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            z-index: 999;
+            color: black;
+            background-color: #ffffff;
+            width: 180px;
+            margin-left: -16px;
+            margin-top: 9px;
+            box-shadow: 1px 1px 6px -2px rgb(0 0 0 / 24%);
+        }
+        .user-account-setting a {
+            color: black;
+            padding-top: 100px;
+        }
+        .user-account-setting > h3 {
+            color: black;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+        .profile img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            border: 5px solid;
+            border-color: white;
+        }
+        .profile {
+            margin-left: 60px;
+            margin-top: -110px;
+            position: relative;
+        }
+        .user-status {
+            margin-left: -805px;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 27px;
+        }
+        .user-status li span {
+            color: #686868;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .user-status li b {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        .right-col {
+            padding-top: 100px;
+        }
+        .setting-btn i {
+            border-radius: 5px; 
+            background-color: #e75348;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            margin-left: 150px;
+        }
+        .center-col {
+            padding-top: 60px;
+        }
+        .user-tab {
+            margin-left: 20px;
+        }
+    </style>
+    <body style="background-color: rgb(233, 233, 233);">
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <img class="logo-img" src="faviconn.png" alt="logo">
+                    </div>
+                    <div class="search-bar">
+                        <form action="">
+                            <input type="text" name="search" placeholder="Search...">
+                            <button type="submit">
+                                <i class="fa fa-search" id="search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-home"></i> Home</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-bell"></i> Notification</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="user-account">
+                        <div class="user-info">
+                            <img src="img.jpg" alt="profile">
+                            <a href="#" title>Yhnnel</a>
+                            <i class="fa fa-arrow-down"></i>
+                        </div>
+                        <div class="user-account-setting" >
+                            <h3 style="margin-top: 17px; font-size: 20px;">Setting</h3><hr>
+                            <a href="#">Account Setting</a><br><br>
+                            <a href="#">Privacy</a><br><br>
+                            <a href="#">Faqs</a><br><br>
+                            <a href="#">Terms & Conditions</a><hr>
+                            <h3 style=" padding: 15px 50px 15px 36px; margin: -17px 0px -10px 0px; background-color: #e2e2e2; font-size: 20px;">
+                                <a href="sign_in.html" style="color: #e75348">Logout</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="cover">
+            <img src="cover-img.jpg" alt="cover">
+        </section>
+        <main style="background-color: rgb(233, 233, 233);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 left-col" style="background-color: white;">
+                        <section class="profile">
+                            <img src="img.jpg" alt="profile">
+                        </section>
+                        <div class="user-status">
+                            <br><br>
+                            <ul>
+                                <li>
+                                    <span>Following</span>
+                                    <b>34</b>
+                                </li>
+                                <li>
+                                    <span>Followers</span>
+                                    <b>155</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 center-col">
+                        <div class="user-tab">
+                            <h3 style="padding-bottom: 5px;">John Doe</h3>
+                            <h4 style="color: #686868;">Software Developer</h4>
+                        </div>
+                        <div class="posts-section">
+                            <div class="post">
+                                <div class="post-top">
+                                    <div class="user">
+                                        <img src="img.jpg" alt="profile">
+                                        <div class="user-name-date"></div>
+                                    </div>
+                                    <div class="edit-delete"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 right-col">
+                        <div class="setting-btn">
+                            <a href="#"><i class="fa fa-cog"> Settings</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
