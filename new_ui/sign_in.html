@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+        <link rel="icon" href="favicon.png" type="image/icon type">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        .outer-container {
+            background-color: white;
+            width: 60%;
+            margin-top: 4%;
+            position: relative;
+        }
+        .inside-container {
+            background-color: white;
+            padding: 5%;
+        }
+        .info-left {
+            margin-left: -40px;
+        }
+        .s-btni {
+            border: none;
+            height: 40px;
+            text-align: center;
+            background-color: #e75348;
+            width: 110px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .s-btni a {
+            color: white;
+        }
+        .s-btnu {
+            background-color: rgb(204, 204, 204);
+            text-align: center;
+            width: 110px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .logo-img {
+            margin-top: 40px;
+            margin-left: 10px;
+            width: 310px;
+            height: 105px;
+        }
+        .s-img {
+            padding-top: 20px;
+        }
+        .p-info {
+            margin-left: 30px;
+            font-size: 14px;
+            color: grey;
+        }
+        .r-form {
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        input {
+            width: 100%;
+            height: 50px;
+            outline: none;
+            border-radius: 5px;
+            border-color: #e75348;
+            font-size: 15px;
+        }
+        .i-btn {
+            border: none;
+            height: 40px;
+            text-align: center;
+            background-color: #e75348;
+            color: white;
+            width: 110px;
+            border-radius: 5px;
+        }
+        .f-pass {
+            text-decoration: none;
+            color: grey;
+            margin-left: 60%;
+        }
+        .line {
+            margin-top: -35px;
+            color: #e75348;
+            text-decoration: underline;
+            font-size: 25px;
+        }
+    </style>
+    <body style="background-color: #e75348;">
+        <div class="container outer-container">
+            <div class="row inside-container">
+                <div class="col info-left">
+                    <div class="row">
+                        <div class="col align-self-start">
+                            <img class="logo-img" src="logo.png" alt="logo">
+                        </div>
+                        <div class="col p-info align-self-start">
+                            <p><br>ReachMe, is a social networking platform where you and your friends connect and interract through the internet.</p>
+                        </div>
+                        <div class="col s-img">
+                            <img src="s_img.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col form-right">
+                    <div class="row justify-content-end">
+                        <div class="col-5 s-btni">
+                            <a href="sign_in.html" class="btn">Sign In</a>
+                        </div>
+                        <div class="col-5 s-btnu">
+                            <a href="sign_up.html" class="btn">Sign Up</a>
+                        </div>
+                    </div><br><br>
+                    <div class="row r-form align-self-start">
+                        <h3>Sign In</h3>
+                        <div class="col line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <br><br>
+                        <form action="">
+                            <input type="text" name="email" placeholder="Username" required>
+                            <br><br>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <br><br>
+                            <a href="#" class="f-pass">Forgot Password?</a>
+                            <br><br>
+                            <a href="my_profile.html"><input type="button" class="i-btn" value="Sign In"></a>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>
