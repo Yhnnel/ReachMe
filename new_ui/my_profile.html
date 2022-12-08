@@ -97,9 +97,36 @@
             margin-left: 5px;
             margin-right: -5px;
         }
+        .cover {
+            margin-top: -40px;
+        }
         .cover img {
             width: 100%;
             position: relative;
+            z-index: 1;
+        }
+        .cover input{
+            z-index: 2;
+            position: relative;
+            background-color: white;
+            font-weight: bold;
+            border: 2px solid #e44d3a;
+            border-radius: 5px;
+            width: 150px;
+            left: 89%;
+            top: 70px;
+        }
+        .cover input:hover{
+            z-index: 2;
+            position: relative;
+            background-color: #e44d3a;
+            color: white;
+            font-weight: bold;
+            border: 2px solid #e44d3a;
+            border-radius: 5px;
+            width: 150px;
+            left: 89%;
+            top: 70px;
         }
         .user-account-setting {
             display: none;
@@ -150,23 +177,54 @@
             margin-left: 60px;
             margin-top: -110px;
             position: relative;
+            z-index: 2;
+        }
+        .cam i{
+            left: 200px;
+            top: -60px;
+            font-size: 14px;
+            box-shadow: none;
+            position: relative;
+            z-index: 3;
+            border-radius: 50px;
+            text-align: center;
+            background: #e44d3a;
+            padding: 12px;
+            color: #ffff;
+            border: 2px solid #e44d3a;
+        }
+        .cam i:hover{
+            left: 200px;
+            top: -60px;
+            font-size: 14px;
+            box-shadow: none;
+            position: relative;
+            z-index: 3;
+            border-radius: 50px;
+            text-align: center;
+            background: #e44d3a;
+            padding: 12px;
+            color: #ffff;
+            border: 2px solid white;
         }
         .user-status {
             margin-left: -805px;
             border-bottom: 1px solid #e5e5e5;
-            padding-bottom: 27px;
+            height: 50px;
         }
         .user-status li span {
             color: #686868;
             font-size: 20px;
             font-weight: 500;
             margin-bottom: 15px;
+            padding-bottom: 10px;
         }
         .user-status li b {
             color: #000000;
             font-size: 20px;
             font-weight: 600;
             margin-right: 15px;
+            padding-bottom: 10px;
         }
         .user-tab h4 {
             margin-top: -10px;
@@ -315,15 +373,21 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </header>     
         <section class="cover">
+            <input type="submit" value="Change Photo">
             <img src="cover-img.jpg" alt="cover">
         </section>
         <main style="background-color: rgb(233, 233, 233);">
             <div class="container">
                 <div class="row">
                     <div class="col-3 left-col" style="background-color: white;">
+                        <section class="cam">
+                            <i class="fa fa-camera"></i>
+                        </section>
+                        
                         <section class="profile">
+                            
                             <img src="img.jpg" alt="profile">
                         </section>
                         <div class="user-status">
