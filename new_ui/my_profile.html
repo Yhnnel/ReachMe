@@ -246,12 +246,19 @@
 
         .left-col {
             height: 180px;
+            background-color: white;
         }
         .center-col {
             padding-top: 60px;
         }
         .user-tab {
             margin-left: 20px;
+        }
+        .user-tab h3 {
+            padding-bottom: 5px;
+        }
+        .user-tab h4 {
+            color: #686868;
         }
         .post-top {
             padding-bottom: 20px;
@@ -304,6 +311,11 @@
         .post-content {
             margin: 15px 15px 15px 15px;
         }
+        .post-content img {
+            width:100%; 
+            border-radius: 0px; 
+            margin:auto;
+        }
         .like-com .like {
             text-align: center;
             width: 100px;
@@ -329,8 +341,32 @@
         .com i {
             color: #686868;
         }
+        body {
+            background-color: rgb(233, 233, 233);
+        }
+        .uas-setting {
+            margin-top: 17px; 
+            font-size: 20px;
+        }
+        .uas-logout {
+            padding: 10px 0px 10px 10px;
+            margin-top: -16px;
+            margin-left: -10px;
+            margin-bottom: 0px;
+            margin-right: 10px;
+            text-align: center;
+            background-color: #e2e2e2; 
+            font-size: 20px;
+            
+        }
+        .uas-logout a {
+            color: #e75348;
+        }
+        main {
+            background-color: rgb(233, 233, 233);
+        }
     </style>
-    <body style="background-color: rgb(233, 233, 233);">
+    <body>
         <header>
             <div class="container">
                 <div class="header-content">
@@ -362,13 +398,13 @@
                             <i class="fa fa-arrow-down"></i>
                         </div>
                         <div class="user-account-setting" >
-                            <h3 style="margin-top: 17px; font-size: 20px;">Setting</h3><hr>
+                            <h3  class="uas-setting">Setting</h3><hr>
                             <a href="#">Account Setting</a><br><br>
                             <a href="#">Privacy</a><br><br>
                             <a href="#">Faqs</a><br><br>
                             <a href="#">Terms & Conditions</a><hr>
-                            <h3 style=" padding: 15px 50px 15px 36px; margin: -17px 0px -10px 0px; background-color: #e2e2e2; font-size: 20px;">
-                                <a href="sign_in.html" style="color: #e75348">Logout</a>
+                            <h3 class="uas-logout">
+                                <a href="sign_in.html">Logout</a>
                             </h3>
                         </div>
                     </div>
@@ -379,10 +415,10 @@
             <input type="submit" value="Change Photo">
             <img src="cover-img.jpg" alt="cover">
         </section>
-        <main style="background-color: rgb(233, 233, 233);">
+        <main>
             <div class="container">
                 <div class="row">
-                    <div class="col-3 left-col" style="background-color: white;">
+                    <div class="col-3 left-col">
                         <section class="cam">
                             <i class="fa fa-camera"></i>
                         </section>
@@ -407,8 +443,8 @@
                     </div>
                     <div class="col-6 center-col">
                         <div class="user-tab">
-                            <h3 style="padding-bottom: 5px;">John Doe</h3>
-                            <h4 style="color: #686868;">Software Developer</h4>
+                            <h3>John Doe</h3>
+                            <h4>Software Developer</h4>
                         </div>
                         <div class="posts-section">
                             <div class="post">
@@ -474,7 +510,7 @@
                                 </div>
                             </div>
                             <div class="post-content">
-                                <img style="width:100%; border-radius: 0px; margin:auto" src="cover-img.jpg" alt="">
+                                <img src="cover-img.jpg" alt="">
                             </div>
                             <hr>
                             <div class="like-com">
